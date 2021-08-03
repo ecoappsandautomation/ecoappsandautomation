@@ -20,7 +20,7 @@ function menu(props) {
 	// }, [section, getItem]);
 	return (
 		<Body>
-			{/* <VisibilityListener defaultTitle={`Menu | ${details.title}`} /> */}
+			{/* <VisibilityListener defaultTitle={`Menu | ${details.browser_title}`} /> */}
 			<Container>
 				{/* <MenuNav section={section} setSection={setSection} />
 				<Section items={items} section={section} /> */}
