@@ -10,14 +10,14 @@ function checkout(props) {
 	const basket = useSelector(selectBasket);
 	return (
 		<>
-			<Head>
+			{/* <Head>
 				<script
 					src={`https://maps.googleapis.com/maps/api/js?key=AIzaSyAaXHaWc3PsYBBCPaUYAwJ1x7tuFiK00Dc&libraries=places`}
 				/>
-			</Head>
+			</Head> */}
 			<Container>
 				;
-				<CheckoutLeftContainer>
+				{/* <CheckoutLeftContainer>
 					{basket?.length === 0 ? (
 						<div>
 							<h2>Your order is empty</h2>
@@ -54,7 +54,7 @@ function checkout(props) {
 				<CheckoutRightContainer>
 					<Subtotal />
 					<PayItForwardRequestor />
-				</CheckoutRightContainer>
+				</CheckoutRightContainer> */}
 			</Container>
 		</>
 	);
