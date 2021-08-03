@@ -8,7 +8,7 @@ function MenuNav({ section, setSection }) {
 			{menu.nav.map((item) => {
 				let currentItemIndex = menu.nav.indexOf(item);
 				if (section === currentItemIndex) {
-					return <ActiveItem>{item}</ActiveItem>;
+					return <ActiveItem key={item}>{item}</ActiveItem>;
 				} else {
 					return <p onClick={() => setSection(currentItemIndex)}>{item}</p>;
 				}

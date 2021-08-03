@@ -15,7 +15,7 @@ function ServiceBox({ title, activityScope, price, billingFrequency, url }) {
 			<Title>{title}</Title>
 			<List>
 				{activityScope.map((item) => (
-					<BulletPoint>
+					<BulletPoint key={item}>
 						<Bullet />
 						<p>{item}</p>
 					</BulletPoint>

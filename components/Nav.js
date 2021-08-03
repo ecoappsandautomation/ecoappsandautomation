@@ -13,12 +13,13 @@ function Nav(props) {
 			{urls.map(({ name, url }) => (
 				<>
 					{router.pathname === url ? (
-						<ActiveLink>{name}</ActiveLink>
+						<ActiveLink key={name}>{name}</ActiveLink>
 					) : (
 						<Link
 							onClick={() => {
 								visitUrl(url);
 							}}
+							key={name}
 						>
 							{name}
 						</Link>

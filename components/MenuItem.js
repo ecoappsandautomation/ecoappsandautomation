@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
+import Image from "next/image";
 import {
 	addBasketItem,
 	removeBasketItem,
@@ -78,7 +79,7 @@ function MenuItem({
 	return (
 		<Container>
 			<ImgContainer>
-				<img
+				<Image
 					src={
 						image
 							? image
@@ -102,7 +103,9 @@ function MenuItem({
 						onChange={(e) => setProductPrice(e.target.value)}
 					>
 						{options.map(({ value, price }) => (
-							<option value={price}>{value}</option>
+							<option key={value} value={price}>
+								{value}
+							</option>
 						))}
 					</OptionsSelect>
 				)}

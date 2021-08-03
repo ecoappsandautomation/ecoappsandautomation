@@ -13,6 +13,7 @@ function Section({ items }) {
 								return (
 									<MenuItem
 										title={key}
+										key={value.id}
 										id={value.id}
 										description={value.description}
 										price={value.price}

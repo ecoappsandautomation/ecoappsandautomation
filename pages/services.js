@@ -10,6 +10,7 @@ function services(props) {
 		<Container>
 			{services.map((service) => (
 				<ServiceBox
+					key={service?.id}
 					title={service.title}
 					activityScope={service.activityScope}
 					price={service.price}
