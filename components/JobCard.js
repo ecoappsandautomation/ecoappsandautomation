@@ -63,11 +63,13 @@ function JobCard({
 					<h4>Description:</h4>
 					<p>{description}</p>
 					<h4>Duties:</h4>
-					<p>{duties && duties.map((duty) => <p>- {duty}</p>)}</p>
+					<p>{duties && duties.map((duty) => <p key={duty}>- {duty}</p>)}</p>
 					<h4>Requirements / Skills:</h4>
-					<p>{skills && skills.map((skill) => <p>- {skill}</p>)}</p>
+					<p>{skills && skills.map((skill) => <p key={skill}>- {skill}</p>)}</p>
 					<h4>Experience:</h4>
-					<p>{experience && experience.map((exp) => <p>- {exp}</p>)}</p>
+					<p>
+						{experience && experience.map((exp) => <p key={exp}>- {exp}</p>)}
+					</p>
 					<h4>Availability:</h4>
 					<p>{availability}</p>
 					<BtnContainer>

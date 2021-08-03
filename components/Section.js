@@ -6,7 +6,7 @@ function Section({ items }) {
 		<Container>
 			{items &&
 				Object.entries(items).map(([key, value]) => (
-					<SectionContainer>
+					<SectionContainer key={key}>
 						<ItemHeader>{key}</ItemHeader>
 						<ItemsContainer>
 							{Object.entries(value).map(([key, value]) => {

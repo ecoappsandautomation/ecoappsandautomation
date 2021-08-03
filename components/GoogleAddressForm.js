@@ -121,6 +121,7 @@ function GoogleAddressForm({
 								};
 								return (
 									<div
+										key={suggestion}
 										{...getSuggestionItemProps(suggestion, { style })}
 										onClick={() => {
 											setPlace(suggestion.terms);
