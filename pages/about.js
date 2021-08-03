@@ -7,7 +7,10 @@ function about(props) {
 	return (
 		<Container>
 			<VisibilityListener defaultTitle={`About | ${details.browser_title}`} />
-			<h2>{details.title}'s Story Coming Soon...</h2>
+			<h2>
+				{details.title}
+				{"'s Story Coming Soon..."}
+			</h2>
 		</Container>
 	);
 }

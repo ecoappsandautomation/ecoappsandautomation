@@ -5,18 +5,17 @@ import { useRouter } from "next/router";
 import { useCollection } from "react-firebase-hooks/firestore";
 import { db } from "../firebase";
 import { BsFillCircleFill } from "react-icons/bs";
+const { query } = useRouter();
+const [orderSnapshot] = useCollection(
+	db.collection("orders").doc(query.session_id)
+);
 function thankyou(props) {
 	// Grab URL Paramater of Session id to grab the order details
 	// Add status of order to the page
 	// In the future, give user / customer the ability to create an account for offers &
 	// billing history
-	const { query } = useRouter();
-	const [orderSnapshot] = useCollection(
-		db.collection("orders").doc(query.session_id)
-	);
 
 	const order = orderSnapshot?.data();
-	console.log(order);
 	return (
 		<Container>
 			<Body>
