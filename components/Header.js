@@ -18,6 +18,7 @@ import { selectBasket } from "../features/basketSlice";
 import { FaShoppingBag } from "react-icons/fa";
 import EmailIcon from "@material-ui/icons/Email";
 function Header(props) {
+	const [hideHeader, setHideHeader] = useState(false);
 	const [showNav, setShowNav] = useState(false);
 	const [open, setOpen] = React.useState(false);
 	const [locationDetails, setLocationDetails] = useState(null);
@@ -35,6 +36,13 @@ function Header(props) {
 	useEffect(() => {
 		setLocationDetails(getLocation(location));
 	}, [location, getLocation]);
+	useEffect(() => {
+		if (router.pathname === "/coding4cauvery") {
+			setHideHeader(true);
+		} else {
+			setHideHeader(false);
+		}
+	}, []);
 	return (
 		<Media query='(min-width: 768px)'>
 			{(matches) => {
@@ -55,52 +63,54 @@ function Header(props) {
 									</Email>
 								</Phone>
 								<Location
-									onClick={() => {
-										handleToggle();
-									}}
+								// onClick={() => {
+								// 	handleToggle();
+								// }}
 								>
 									<LocationOnIcon />
 									<span ref={anchorRef}>{location}</span>
 									{locationDetails?.length >= 2 ? <ExpandMoreIcon /> : null}
-									<LocationDropdown
+									{/* <LocationDropdown
 										open={open}
 										setOpen={setOpen}
 										anchorRef={anchorRef}
-									/>
+									/> */}
 								</Location>
 							</TopContent>
 						</TopBar>
-						<Container>
-							{details.logoUrl ? (
-								<LogoImg
-									src={details.logoUrl}
-									onClick={() => {
-										visitUrl(`/`);
-									}}
-								/>
-							) : (
-								<h1
-									onClick={() => {
-										visitUrl(`/`);
-									}}
-								>
-									{details.title}
-								</h1>
-							)}
+						{hideHeader ? null : (
+							<Container>
+								{details.logoUrl ? (
+									<LogoImg
+										src={details.logoUrl}
+										onClick={() => {
+											visitUrl(`/`);
+										}}
+									/>
+								) : (
+									<h1
+										onClick={() => {
+											visitUrl(`/`);
+										}}
+									>
+										{details.title}
+									</h1>
+								)}
 
-							<Nav />
+								<Nav />
 
-							<HeaderRight>
-								<BasketContainer
-									onClick={() => {
-										visitUrl(`/checkout`);
-									}}
-								>
-									{/* <CartIcon />
+								<HeaderRight>
+									<BasketContainer
+										onClick={() => {
+											visitUrl(`/checkout`);
+										}}
+									>
+										{/* <CartIcon />
 									<BasketItemCount>{basket?.length}</BasketItemCount> */}
-								</BasketContainer>
-							</HeaderRight>
-						</Container>
+									</BasketContainer>
+								</HeaderRight>
+							</Container>
+						)}
 					</>
 				) : (
 					<>
@@ -128,33 +138,35 @@ function Header(props) {
 								</Location>
 							</TopContent>
 						</TopBar>
-						<Container>
-							{details.logoUrl ? (
-								<MobileLogoImg
-									src={details.logoUrl}
+						{hideHeader ? null : (
+							<Container>
+								{details.logoUrl ? (
+									<MobileLogoImg
+										src={details.logoUrl}
+										onClick={() => {
+											visitUrl(`/`);
+										}}
+									/>
+								) : (
+									<h1
+										onClick={() => {
+											visitUrl(`/`);
+										}}
+									>
+										{details.title}
+									</h1>
+								)}
+
+								<Deliver
 									onClick={() => {
-										visitUrl(`/`);
-									}}
-								/>
-							) : (
-								<h1
-									onClick={() => {
-										visitUrl(`/`);
+										visitUrl("/services");
 									}}
 								>
-									{details.title}
-								</h1>
-							)}
-
-							<Deliver
-								onClick={() => {
-									visitUrl("/services");
-								}}
-							>
-								Hire Us
-							</Deliver>
-							<HamburgerMenu onClick={() => setShowNav(!showNav)} />
-						</Container>
+									Hire Us
+								</Deliver>
+								<HamburgerMenu onClick={() => setShowNav(!showNav)} />
+							</Container>
+						)}
 						{showNav ? (
 							<MobileLinks>
 								<MobileNav />

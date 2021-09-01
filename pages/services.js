@@ -25,7 +25,7 @@ export default services;
 const Container = styled.div`
 	display: flex;
 	@media (min-width: 1208px) {
-		width: 50vw;
+		width: 80vw;
 	}
 	@media (max-width: 600px) {
 		width: 90vw;

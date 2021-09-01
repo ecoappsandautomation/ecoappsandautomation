@@ -3,21 +3,34 @@ import styled from "styled-components";
 import { CgWebsite } from "react-icons/cg";
 import { BiSupport } from "react-icons/bi";
 import { RiPlantLine } from "react-icons/ri";
+import { useRouter } from "next/router";
 function ServicesSection(props) {
+	const router = useRouter();
+	const visitUrl = (url) => {
+		router.push(url);
+	};
 	return (
 		<Container>
 			<h1>Check out our services</h1>
 			<BoxContainer>
-				<Box>
+				<Box
+					onClick={() => {
+						visitUrl("/services");
+					}}
+				>
 					<MgmtIcon /> Project Management
 				</Box>
-				<Box>
-					<WebIcon /> Dynamic Web Development
+				<Box
+					onClick={() => {
+						visitUrl("/services");
+					}}
+				>
+					<WebIcon /> Web Development
 				</Box>
-				<Box>
+				{/* <Box>
 					<SupportIcon />
 					IT Support
-				</Box>
+				</Box> */}
 			</BoxContainer>
 		</Container>
 	);
