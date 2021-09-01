@@ -22,8 +22,8 @@ function coding4cauvery(props) {
 			</p>
 			<p>
 				After you&apos;ve completed this course, you&apos;ll be able to turn
-				your ideas into websites even if you've never written a single line of
-				code before.
+				your ideas into websites even if you&apos;ve never written a single line
+				of code before.
 			</p>
 			<TwoColumn>
 				<Left>
@@ -50,7 +50,7 @@ function coding4cauvery(props) {
 						<a href='https://instagram.com/ssssangha'>@ssssangha</a>) and built
 						these projects:
 					</p>
-					<img src='https://i.postimg.cc/gjFS8HmC/projects-screenshot.png' />
+					<Image src='https://i.postimg.cc/gjFS8HmC/projects-screenshot.png' />
 					<p>
 						If you want to learn how to make these projects, you can check out
 						Clever Programmer&apos;s course or Sonny&apos;s course.
@@ -110,8 +110,8 @@ function coding4cauvery(props) {
 				</h4>
 				<p>
 					For this module, you&apos;ll make a website to share a skill, passion,
-					message, or whatever with the world. We'll be making a website for a
-					fictional restaurant called Prana Pizza. 🍕
+					message, or whatever with the world. We&apos;ll be making a website
+					for a fictional restaurant called Prana Pizza. 🍕
 				</p>
 			</Module>
 

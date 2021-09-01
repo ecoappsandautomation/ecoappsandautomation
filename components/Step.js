@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { Widget as TypeForm } from "@typeform/embed-react";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
+import Image from "next/image";
 function Step({ step }) {
 	const router = useRouter();
 	const visitUrl = (url) => {
@@ -32,6 +33,7 @@ function Step({ step }) {
 				</p>
 				<a
 					target='_blank'
+					rel='noreferrer'
 					href='https://www.ishaoutreach.org/en/cauvery-calling/campaigns/donate-tree-for-sadhgurus-birthday'
 				>
 					<button>Contribute to Vaisakh&apos;s Campaign</button>
@@ -51,9 +53,9 @@ function Step({ step }) {
 					You&apos;ll find it in your email and the subject line will look like
 					this:
 				</p>
-				<img src='https://i.postimg.cc/CL9j71VH/Cauvery-Calling-Email.png' />
+				<Image src='https://i.postimg.cc/CL9j71VH/Cauvery-Calling-Email.png' />
 				<p>The certificate looks like this:</p>
-				<img
+				<Image
 					src='https://i.postimg.cc/HkByr4tx/Cauvery-calling-certificate.jpg'
 					style={{ width: `${certificateWidth}` }}
 					onClick={() => {
