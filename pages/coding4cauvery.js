@@ -16,32 +16,33 @@ function coding4cauvery(props) {
 			</h3>
 			<br />
 			<p>
-				You'll learn how to make modern websites with technologies like Next.js,
-				React.js, Supabase, Redux, Styled-components, Html, CSS, Javascript. and
-				GitHub.
+				You&apos;ll learn how to make modern websites with technologies like
+				Next.js, React.js, Supabase, Redux, Styled-components, Html, CSS,
+				Javascript. and GitHub.
 			</p>
 			<p>
-				After you've completed this course, you'll be able to turn your ideas
-				into websites even if you've never written a single line of code before.
+				After you&apos;ve completed this course, you&apos;ll be able to turn
+				your ideas into websites even if you've never written a single line of
+				code before.
 			</p>
 			<TwoColumn>
 				<Left>
 					<p>
-						Namaskaram, my name is Sajan and I'm making this course for my
-						Guru's birthday. Vaisakh (
+						Namaskaram, my name is Sajan and I&apos;m making this course for my
+						Guru&apos;s birthday. Vaisakh (
 						<a href='https://instagram.com/vaisu90'>@vaisu90</a>), a meditator
 						in India, has <br /> started a campaign to plant 64,000 trees on
-						behalf of Sadhguru's birthday, and as an offering, I'm making this
-						course available to anyone who donates 25 trees or more to the
-						Cauvery Calling campaign.
+						behalf of Sadhguru&apos;s birthday, and as an offering, I&apos;m
+						making this course available to anyone who donates 25 trees or more
+						to the Cauvery Calling campaign.
 					</p>
 					<Step step={1} />
 					<SmallTxt>(Scroll down to see steps 2 & 3)</SmallTxt>
 				</Left>
 				<Right>
 					<p>
-						I'm not an educator, or an advanced coding expert, I've been coding
-						for 1 year now thanks to Clever Programmer (
+						I&apos;m not an educator, or an advanced coding expert, I&apos;ve
+						been coding for 1 year now thanks to Clever Programmer (
 						<a href='https://instagram.com/cleverprogrammer'>
 							@cleverprogrammer
 						</a>
@@ -52,14 +53,14 @@ function coding4cauvery(props) {
 					<img src='https://i.postimg.cc/gjFS8HmC/projects-screenshot.png' />
 					<p>
 						If you want to learn how to make these projects, you can check out
-						Clever Programmer's course or Sonny's course.
+						Clever Programmer&apos;s course or Sonny&apos;s course.
 					</p>
 				</Right>
 			</TwoColumn>
 
 			<p>
-				In Coding 4 Cauvery, you'll learn how to make a website of your own and
-				learn the fundamentals along the way.
+				In Coding 4 Cauvery, you&apos;ll learn how to make a website of your own
+				and learn the fundamentals along the way.
 			</p>
 			<h2>
 				If you want to unlock this beginners course, there are three steps to
@@ -76,7 +77,7 @@ function coding4cauvery(props) {
 					<i>Release Date September 17, 2021</i>
 				</h4>
 				<p>
-					In this module, you'll learn how to set your environment up for
+					In this module, you&apos;ll learn how to set your environment up for
 					coding, from your code editor to your mind to prepare you to write
 					impactful code and how to approach challenges when troubleshooting
 					coding bugs or errors.
@@ -88,8 +89,9 @@ function coding4cauvery(props) {
 					Documentation - <i>Release Date September 24, 2021</i>
 				</h4>
 				<p>
-					In this module, you'll learn how to map out your app idea and identify
-					the different kinds of users, actions, and end results for your app.
+					In this module, you&apos;ll learn how to map out your app idea and
+					identify the different kinds of users, actions, and end results for
+					your app.
 				</p>
 			</Module>
 
@@ -98,7 +100,7 @@ function coding4cauvery(props) {
 					<b>Module 3 -</b> Introduction to Next.js -{" "}
 					<i>Release Date October 1, 2021</i>
 				</h4>
-				<p>In this module, you'll learn the basics of Next.js websites.</p>
+				<p>In this module, you&apos;ll learn the basics of Next.js websites.</p>
 			</Module>
 
 			<Module>
@@ -107,7 +109,7 @@ function coding4cauvery(props) {
 					<i>Release Date October 8, 2021</i>
 				</h4>
 				<p>
-					For this module, you'll make a website to share a skill, passion,
+					For this module, you&apos;ll make a website to share a skill, passion,
 					message, or whatever with the world. We'll be making a website for a
 					fictional restaurant called Prana Pizza. 🍕
 				</p>
@@ -119,9 +121,9 @@ function coding4cauvery(props) {
 					<i>Release Date October 15, 2021</i>
 				</h4>
 				<p>
-					For this module, you'll learn how to connect your website to a
-					database. We'll be using Supabase, a Backend as a Service NoSQL SQL
-					scalable database.
+					For this module, you&apos;ll learn how to connect your website to a
+					database. We&apos;ll be using Supabase, a Backend as a Service NoSQL
+					SQL scalable database.
 				</p>
 			</Module>
 
@@ -130,7 +132,7 @@ function coding4cauvery(props) {
 					<b>Module 6 -</b> User Login AKA Authentication (Project) -{" "}
 					<i>Release Date October 22, 2021</i>
 				</h4>
-				<p>For this module, you'll learn how to login to your website.</p>
+				<p>For this module, you&apos;ll learn how to login to your website.</p>
 			</Module>
 
 			<Module>
@@ -139,8 +141,8 @@ function coding4cauvery(props) {
 					<i>Release Date October 29, 2021</i>
 				</h4>
 				<p>
-					For this module, you'll learn how to create an admin & user backend
-					for logged-in users of your website.
+					For this module, you&apos;ll learn how to create an admin & user
+					backend for logged-in users of your website.
 				</p>
 			</Module>
 
@@ -149,7 +151,9 @@ function coding4cauvery(props) {
 					<b>Module 8 -</b> Payment Processing (Project) -{" "}
 					<i>Release Date November 5, 2021</i>
 				</h4>
-				<p>For this module, you'll learn how to create a checkout process.</p>
+				<p>
+					For this module, you&apos;ll learn how to create a checkout process.
+				</p>
 			</Module>
 
 			<Module>
@@ -158,7 +162,7 @@ function coding4cauvery(props) {
 					<i>Release Date November 12, 2021</i>
 				</h4>
 				<p>
-					For this module, you'll learn how to launch (deploy) your website
+					For this module, you&apos;ll learn how to launch (deploy) your website
 					publicly.
 				</p>
 			</Module>
@@ -169,8 +173,8 @@ function coding4cauvery(props) {
 					<i>Release Date November 19, 2021</i>
 				</h4>
 				<p>
-					For this module, you'll learn how to improve your code and maintain
-					your existing public repositories (websites).
+					For this module, you&apos;ll learn how to improve your code and
+					maintain your existing public repositories (websites).
 				</p>
 			</Module>
 		</Container>

@@ -23,8 +23,8 @@ function Step({ step }) {
 		return (
 			<StepOne>
 				<StepNum>
-					🌳 1 - Contribute 25 or more trees to Vaisakh's campaign for Cauvery
-					Calling
+					🌳 1 - Contribute 25 or more trees to Vaisakh&apos;s campaign for
+					Cauvery Calling
 				</StepNum>
 				<p>
 					You will be redirected to an Isha Foundation page to process the
@@ -34,7 +34,7 @@ function Step({ step }) {
 					target='_blank'
 					href='https://www.ishaoutreach.org/en/cauvery-calling/campaigns/donate-tree-for-sadhgurus-birthday'
 				>
-					<button>Contribute to Vaisakh's Campaign</button>
+					<button>Contribute to Vaisakh&apos;s Campaign</button>
 				</a>
 			</StepOne>
 		);
@@ -48,7 +48,8 @@ function Step({ step }) {
 				</StepNum>
 
 				<p>
-					You'll find it in your email and the subject line will look like this:
+					You&apos;ll find it in your email and the subject line will look like
+					this:
 				</p>
 				<img src='https://i.postimg.cc/CL9j71VH/Cauvery-Calling-Email.png' />
 				<p>The certificate looks like this:</p>
