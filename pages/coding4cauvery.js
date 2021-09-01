@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Step from "../components/Step";
