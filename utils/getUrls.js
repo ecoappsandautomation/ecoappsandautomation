@@ -1,8 +1,8 @@
 const urls = [
 	{ name: "Home", url: `/` },
-	{ name: "About", url: `/about` },
-	// { name: "Menu", url: `/menu` },
-	// { name: "Work", url: `/work` },
+	// { name: "About", url: `/about` },
+	{ name: "Coding4Cauvery", url: `/coding4cauvery` },
+	// { name: "Projects", url: `/projects` },
 ];
 
 export default function getUrls() {
