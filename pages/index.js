@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
-import getDetails from "../utils/getdetails";
-
 import ServicesSection from "../components/ServicesSection";
 export default function Home() {
-	const site_details = getDetails();
 	return (
 		<Container>
-			<Img alt='' src={`${site_details?.banner_url}`} />
+			<Img
+				alt=''
+				src={`https://i.postimg.cc/4NK4b4PT/green-light-laptop.png`}
+			/>
 			<TopHr />
 			{/* <LocationSection /> */}
 			<ServicesSection />

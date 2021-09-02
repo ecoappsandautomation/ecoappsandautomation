@@ -1,16 +1,9 @@
-import React from "react";
 import VisibilityListener from "../components/VisibilityListener";
 import styled from "styled-components";
-import getDetails from "../utils/getDetails";
 function about(props) {
-	const details = getDetails();
 	return (
 		<Container>
-			<VisibilityListener defaultTitle={`About | ${details?.browser_title}`} />
-			<h2>
-				{details?.title}
-				{"'s Story Coming Soon..."}
-			</h2>
+			<h2>{"Eco Apps's Story Coming Soon..."}</h2>
 		</Container>
 	);
 }

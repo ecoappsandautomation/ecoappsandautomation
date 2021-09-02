@@ -11,7 +11,6 @@ import LocationOnIcon from "@material-ui/icons/LocationOn";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { selectCurrentLocation } from "../features/appSlice";
 import getLocation from "../utils/getLocation";
-import getDetails from "../utils/getDetails";
 import { useSelector } from "react-redux";
 import PhoneIcon from "@material-ui/icons/Phone";
 import { selectBasket } from "../features/basketSlice";
@@ -32,7 +31,6 @@ function Header(props) {
 	const handleToggle = () => {
 		setOpen((prevOpen) => !prevOpen);
 	};
-	const details = getDetails();
 	useEffect(() => {
 		setLocationDetails(getLocation(location));
 	}, [location, getLocation]);
@@ -59,7 +57,9 @@ function Header(props) {
 									</PhoneNumber>
 									<Email>
 										<EmailIcon />
-										<a href={`mailto:${details?.email}`}>{details?.email}</a>
+										<a href={`mailto:support@ecoappsandautomation.com`}>
+											support@ecoappsandautomation.com
+										</a>
 									</Email>
 								</Phone>
 								<Location
@@ -80,9 +80,9 @@ function Header(props) {
 						</TopBar>
 						{hideHeader ? null : (
 							<Container>
-								{details.logoUrl ? (
+								{true ? (
 									<LogoImg
-										src={details.logoUrl}
+										src={`https://i.postimg.cc/0NjQHytC/logo-august-20-2020-icon-left-side-square-800x186.png`}
 										onClick={() => {
 											visitUrl(`/`);
 										}}
@@ -93,7 +93,7 @@ function Header(props) {
 											visitUrl(`/`);
 										}}
 									>
-										{details.title}
+										{`Eco Apps and Automation`}
 									</h1>
 								)}
 
