@@ -58,6 +58,7 @@ function coding4cauvery(props) {
 						width={500}
 						height={500}
 						src='https://i.postimg.cc/gjFS8HmC/projects-screenshot.png'
+						alt=''
 					/>
 					<p>
 						If you want to learn how to make these projects, you can check out
