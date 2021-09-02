@@ -2,9 +2,13 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Step from "../components/Step";
+import Head from "next/head";
 function coding4cauvery(props) {
 	return (
 		<Container>
+			<Head>
+				<title>Coding 4 Cauvery | Eco Apps and Automation</title>
+			</Head>
 			<Header>
 				<Logo src='https://i.postimg.cc/0NjQHytC/logo-august-20-2020-icon-left-side-square-800x186.png' />
 				<h1>Coding 4 Cauvery</h1>
