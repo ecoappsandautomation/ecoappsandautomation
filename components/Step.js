@@ -5,21 +5,27 @@ import { Widget as TypeForm } from "@typeform/embed-react";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 import Image from "next/image";
+import emailScreenshot from "../images/Cauvery Calling Email.PNG";
+import certificatePic from "../images/Cauvery-calling-certificate.jpg";
+import { symbolName } from "typescript";
 function Step({ step }) {
 	const router = useRouter();
 	const visitUrl = (url) => {
 		router.push(url);
 	};
-	const [certificateWidth, setCertificateWidth] = useState("150px");
-	const [certificateWidthSize, setCertificateWidthSize] = useState(false);
+	const [certificateWidth, setCertificateWidth] = useState(150);
+	const [certificateHeight, setCertificateHeight] = useState(150);
+	const [certificateDimensions, setCertificateDimensions] = useState(false);
 
 	useEffect(() => {
-		if (certificateWidthSize) {
-			setCertificateWidth("60%");
+		if (certificateDimensions) {
+			setCertificateWidth(1200);
+			setCertificateHeight(1600);
 		} else {
-			setCertificateWidth("150px");
+			setCertificateWidth(150);
+			setCertificateHeight(250);
 		}
-	}, [certificateWidthSize]);
+	}, [certificateDimensions]);
 	if (step === 1) {
 		return (
 			<StepOne>
@@ -53,15 +59,30 @@ function Step({ step }) {
 					You&apos;ll find it in your email and the subject line will look like
 					this:
 				</p>
-				<Image src='https://i.postimg.cc/CL9j71VH/Cauvery-Calling-Email.png' />
-				<p>The certificate looks like this:</p>
-				<Image
-					src='https://i.postimg.cc/HkByr4tx/Cauvery-calling-certificate.jpg'
-					style={{ width: `${certificateWidth}` }}
-					onClick={() => {
-						setCertificateWidthSize(!certificateWidthSize);
-					}}
+				<StyledImage
+					src={emailScreenshot}
+					// height={10} width={800}
 				/>
+				<p>The certificate looks like this:</p>
+				{certificateWidth === 150 ? (
+					<StyledImagePointer
+						src={certificatePic}
+						height={certificateHeight}
+						width={certificateWidth}
+						onClick={() => {
+							setCertificateDimensions(!certificateDimensions);
+						}}
+					/>
+				) : (
+					<Image
+						src={certificatePic}
+						height={certificateHeight}
+						width={certificateWidth}
+						onClick={() => {
+							setCertificateDimensions(!certificateDimensions);
+						}}
+					/>
+				)}
 			</StepTwo>
 		);
 	}
@@ -113,14 +134,6 @@ const Container = styled.div`
 		}
 	}
 
-	> img {
-		width: 100%;
-		transition: 0.333s ease;
-		margin-top: 16px;
-		:hover {
-			transform: scale(1.08);
-		}
-	}
 	> img:nth-child(5) {
 		cursor: pointer;
 	}
@@ -128,6 +141,18 @@ const Container = styled.div`
 	:hover {
 		box-shadow: 0px 0 15px rgba(255, 255, 255, 0.708);
 	}
+`;
+const StyledImage = styled(Image)`
+	width: 100%;
+	transition: 0.333s ease;
+	margin-top: 16px;
+
+	:hover {
+		transform: scale(1.08);
+	}
+`;
+const StyledImagePointer = styled(StyledImage)`
+	cursor: pointer;
 `;
 const StepNum = styled.p`
 	font-size: 21px;
