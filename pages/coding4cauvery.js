@@ -55,10 +55,7 @@ function coding4cauvery(props) {
 						<a href='https://instagram.com/ssssangha'>@ssssangha</a>) and built
 						these projects:
 					</p>
-					<Screenshot
-						src='https://i.postimg.cc/gjFS8HmC/projects-screenshot.png'
-						alt=''
-					/>
+					<Image src={projectsScreenshot} alt='' width={300} />
 					<p>
 						If you want to learn how to make these projects, you can check out
 						Clever Programmer&apos;s course or Sonny&apos;s course.
