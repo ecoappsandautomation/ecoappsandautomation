@@ -288,7 +288,9 @@ const Phone = styled.div`
 	display: flex;
 	align-items: center;
 	color: var(--dark-colour-1);
-
+	@media (max-width: 768px) {
+		flex-direction: column;
+	}
 	font-weight: 500;
 	> a {
 		margin-left: 4px;
