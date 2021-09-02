@@ -125,24 +125,26 @@ function Header(props) {
 									</PhoneNumber>
 									<Email>
 										<EmailIcon />
-										<a href={`mailto:${details?.email}`}>{details?.email}</a>
+										<a href={`mailto:support@ecoappsandautomation.com`}>
+											support@ecoappsandautomation.com
+										</a>
 									</Email>
 								</Phone>
-								<Location
+								{/* <Location
 									onClick={() => {
 										handleToggle();
 									}}
 								>
 									<LocationOnIcon />
 									<span ref={anchorRef}>{location}</span>
-								</Location>
+								</Location> */}
 							</TopContent>
 						</TopBar>
 						{hideHeader ? null : (
 							<Container>
-								{details.logoUrl ? (
+								{true ? (
 									<MobileLogoImg
-										src={details.logoUrl}
+										src={`https://i.postimg.cc/0NjQHytC/logo-august-20-2020-icon-left-side-square-800x186.png`}
 										onClick={() => {
 											visitUrl(`/`);
 										}}
@@ -153,7 +155,7 @@ function Header(props) {
 											visitUrl(`/`);
 										}}
 									>
-										{details.title}
+										Eco Apps and Automation
 									</h1>
 								)}
 
