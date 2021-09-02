@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Step from "../components/Step";
 import Head from "next/head";
 import projectsScreenshot from "../images/projects-screenshot.PNG";
+import cauveryCallingPoster from "../images/sadhguru-cc-poster.png";
 function coding4cauvery(props) {
 	return (
 		<Container>
@@ -33,6 +34,7 @@ function coding4cauvery(props) {
 			</p>
 			<TwoColumn>
 				<Left>
+					<Image src={cauveryCallingPoster} alt='' />
 					<p>
 						Namaskaram, my name is Sajan and I&apos;m making this course for my
 						Guru&apos;s birthday. Vaisakh (
@@ -42,7 +44,7 @@ function coding4cauvery(props) {
 						making this course available to anyone who donates 25 trees or more
 						to the Cauvery Calling campaign.
 					</p>
-					<SmallTxt>(Scroll down to see steps)</SmallTxt>
+					<SmallTxt>(Scroll down to see the steps)</SmallTxt>
 				</Left>
 				<Right>
 					<p>
@@ -230,9 +232,9 @@ const Left = styled.div`
 	@media (min-width: 1024px) {
 		margin-right: 32px;
 	}
-	> p:nth-child(1) {
+	> p:nth-child(2) {
 		color: #fff;
-		margin: 0 0 16px 0;
+		margin: 16px 0;
 	}
 `;
 const Right = styled.div`
