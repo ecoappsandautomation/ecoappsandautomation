@@ -1,17 +1,12 @@
 import styled from "styled-components";
 
-import VisibilityListener from "../components/VisibilityListener";
 import getDetails from "../utils/getdetails";
 
-import LocationSection from "../components/LocationSection";
 import ServicesSection from "../components/ServicesSection";
 export default function Home() {
 	const site_details = getDetails();
 	return (
 		<Container>
-			<VisibilityListener
-				defaultTitle={`Home | ${site_details?.browser_title}'`}
-			/>
 			<Img alt='' src={`${site_details?.banner_url}`} />
 			<TopHr />
 			{/* <LocationSection /> */}

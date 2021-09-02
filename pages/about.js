@@ -6,9 +6,9 @@ function about(props) {
 	const details = getDetails();
 	return (
 		<Container>
-			<VisibilityListener defaultTitle={`About | ${details.browser_title}`} />
+			<VisibilityListener defaultTitle={`About | ${details?.browser_title}`} />
 			<h2>
-				{details.title}
+				{details?.title}
 				{"'s Story Coming Soon..."}
 			</h2>
 		</Container>
