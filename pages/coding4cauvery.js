@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Step from "../components/Step";
 import Head from "next/head";
+import projectsScreenshot from "../images/projects-screenshot.PNG";
 function coding4cauvery(props) {
 	return (
 		<Container>
@@ -54,9 +55,7 @@ function coding4cauvery(props) {
 						<a href='https://instagram.com/ssssangha'>@ssssangha</a>) and built
 						these projects:
 					</p>
-					<Image
-						width={500}
-						height={500}
+					<Screenshot
 						src='https://i.postimg.cc/gjFS8HmC/projects-screenshot.png'
 						alt=''
 					/>
@@ -279,3 +278,5 @@ const SmallTxt = styled.p`
 	font-size: 14px;
 	text-align: center;
 `;
+
+const Screenshot = styled.img``;
