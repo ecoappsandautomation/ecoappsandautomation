@@ -23,13 +23,13 @@ function coding4cauvery(props) {
 			</h3>
 			<br />
 			<p>
-				You&apos;ll learn how to make modern websites with technologies like
+				You&apos;ll learn how to make modern web apps with technologies like
 				Next.js, React.js, Supabase, Redux, Styled-components, Html, CSS,
 				Javascript. and GitHub.
 			</p>
 			<p>
 				After you&apos;ve completed this course, you&apos;ll be able to turn
-				your ideas into websites even if you&apos;ve never written a single line
+				your ideas into web apps even if you&apos;ve never written a single line
 				of code before.
 			</p>
 			<TwoColumn>
@@ -66,7 +66,7 @@ function coding4cauvery(props) {
 			</TwoColumn>
 
 			<p>
-				In Coding 4 Cauvery, you&apos;ll learn how to make a website of your own
+				In Coding 4 Cauvery, you&apos;ll learn how to make a web app of your own
 				and learn the fundamentals along the way.
 			</p>
 			<h2>
@@ -107,16 +107,16 @@ function coding4cauvery(props) {
 					<b>Module 3 -</b> Introduction to Next.js -{" "}
 					<i>Tentative Release Date October 1, 2021</i>
 				</h4>
-				<p>In this module, you&apos;ll learn the basics of Next.js websites.</p>
+				<p>In this module, you&apos;ll learn the basics of Next.js web apps.</p>
 			</Module>
 
 			<Module>
 				<h4>
-					<b>Module 4 -</b> Start Your Website (Project) -{" "}
+					<b>Module 4 -</b> Start Your Web app (Project) -{" "}
 					<i>Tentative Release Date October 8, 2021</i>
 				</h4>
 				<p>
-					For this module, you&apos;ll make a website to share a skill, passion,
+					For this module, you&apos;ll make a web app to share a skill, passion,
 					message, or whatever with the world. We&apos;ll be making a web app
 					called Giving Tree. 🌳
 				</p>
@@ -128,7 +128,7 @@ function coding4cauvery(props) {
 					<i>Tentative Release Date October 15, 2021</i>
 				</h4>
 				<p>
-					For this module, you&apos;ll learn how to connect your website to a
+					For this module, you&apos;ll learn how to connect your web app to a
 					database. We&apos;ll be using Supabase, a Backend as a Service NoSQL
 					SQL scalable database.
 				</p>
@@ -139,7 +139,7 @@ function coding4cauvery(props) {
 					<b>Module 6 -</b> User Login AKA Authentication (Project) -{" "}
 					<i>Tentative Release Date October 22, 2021</i>
 				</h4>
-				<p>For this module, you&apos;ll learn how to login to your website.</p>
+				<p>For this module, you&apos;ll learn how to login to your web app.</p>
 			</Module>
 
 			<Module>
@@ -149,7 +149,7 @@ function coding4cauvery(props) {
 				</h4>
 				<p>
 					For this module, you&apos;ll learn how to create an admin & user
-					backend for logged-in users of your website.
+					backend for logged-in users of your web app.
 				</p>
 			</Module>
 
@@ -169,7 +169,7 @@ function coding4cauvery(props) {
 					<i>Tentative Release Date November 12, 2021</i>
 				</h4>
 				<p>
-					For this module, you&apos;ll learn how to launch (deploy) your website
+					For this module, you&apos;ll learn how to launch (deploy) your web app
 					publicly.
 				</p>
 			</Module>
@@ -181,7 +181,7 @@ function coding4cauvery(props) {
 				</h4>
 				<p>
 					For this module, you&apos;ll learn how to improve your code and
-					maintain your existing public repositories (websites).
+					maintain your existing public repositories (web apps).
 				</p>
 			</Module>
 		</Container>
