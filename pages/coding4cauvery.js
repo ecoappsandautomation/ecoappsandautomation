@@ -117,8 +117,8 @@ function coding4cauvery(props) {
 				</h4>
 				<p>
 					For this module, you&apos;ll make a website to share a skill, passion,
-					message, or whatever with the world. We&apos;ll be making a website
-					for a fictional restaurant called Prana Pizza. 🍕
+					message, or whatever with the world. We&apos;ll be making a web app
+					called Giving Tree. 🌳
 				</p>
 			</Module>
 
