@@ -105,7 +105,7 @@ function coding4cauvery(props) {
 			<Module>
 				<h4>
 					<b>Module 3 -</b> Introduction to Next.js -{" "}
-					<i>Release Date October 1, 2021</i>
+					<i>Tentative Release Date October 1, 2021</i>
 				</h4>
 				<p>In this module, you&apos;ll learn the basics of Next.js websites.</p>
 			</Module>
@@ -113,7 +113,7 @@ function coding4cauvery(props) {
 			<Module>
 				<h4>
 					<b>Module 4 -</b> Start Your Website (Project) -{" "}
-					<i>Release Date October 8, 2021</i>
+					<i>Tentative Release Date October 8, 2021</i>
 				</h4>
 				<p>
 					For this module, you&apos;ll make a website to share a skill, passion,
@@ -125,7 +125,7 @@ function coding4cauvery(props) {
 			<Module>
 				<h4>
 					<b>Module 5 -</b> Backend Setup (Project) -{" "}
-					<i>Release Date October 15, 2021</i>
+					<i>Tentative Release Date October 15, 2021</i>
 				</h4>
 				<p>
 					For this module, you&apos;ll learn how to connect your website to a
@@ -137,7 +137,7 @@ function coding4cauvery(props) {
 			<Module>
 				<h4>
 					<b>Module 6 -</b> User Login AKA Authentication (Project) -{" "}
-					<i>Release Date October 22, 2021</i>
+					<i>Tentative Release Date October 22, 2021</i>
 				</h4>
 				<p>For this module, you&apos;ll learn how to login to your website.</p>
 			</Module>
@@ -145,7 +145,7 @@ function coding4cauvery(props) {
 			<Module>
 				<h4>
 					<b>Module 7 -</b> User Backend by Role (Project) -{" "}
-					<i>Release Date October 29, 2021</i>
+					<i>Tentative Release Date October 29, 2021</i>
 				</h4>
 				<p>
 					For this module, you&apos;ll learn how to create an admin & user
@@ -156,7 +156,7 @@ function coding4cauvery(props) {
 			<Module>
 				<h4>
 					<b>Module 8 -</b> Payment Processing (Project) -{" "}
-					<i>Release Date November 5, 2021</i>
+					<i>Tentative Release Date November 5, 2021</i>
 				</h4>
 				<p>
 					For this module, you&apos;ll learn how to create a checkout process.
@@ -166,7 +166,7 @@ function coding4cauvery(props) {
 			<Module>
 				<h4>
 					<b>Module 9 -</b> Launch. (Project) -{" "}
-					<i>Release Date November 12, 2021</i>
+					<i>Tentative Release Date November 12, 2021</i>
 				</h4>
 				<p>
 					For this module, you&apos;ll learn how to launch (deploy) your website
@@ -177,7 +177,7 @@ function coding4cauvery(props) {
 			<Module>
 				<h4>
 					<b>Module 10 -</b> Optimization & Maintenance -{" "}
-					<i>Release Date November 19, 2021</i>
+					<i>Tentative Release Date November 19, 2021</i>
 				</h4>
 				<p>
 					For this module, you&apos;ll learn how to improve your code and
