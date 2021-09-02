@@ -41,8 +41,7 @@ function coding4cauvery(props) {
 						making this course available to anyone who donates 25 trees or more
 						to the Cauvery Calling campaign.
 					</p>
-					<Step step={1} />
-					<SmallTxt>(Scroll down to see steps 2 & 3)</SmallTxt>
+					<SmallTxt>(Scroll down to see steps)</SmallTxt>
 				</Left>
 				<Right>
 					<p>
