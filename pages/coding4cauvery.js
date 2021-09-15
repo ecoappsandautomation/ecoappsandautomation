@@ -104,10 +104,10 @@ function coding4cauvery(props) {
 
 			<Module>
 				<h4>
-					<b>Module 3 -</b> Introduction to Next.js -{" "}
+					<b>Module 3 -</b> Introduction to Core Programming Skills -{" "}
 					<i>Tentative Release Date October 1, 2021</i>
 				</h4>
-				<p>In this module, you&apos;ll learn the basics of Next.js web apps.</p>
+				<p>In this module, you&apos;ll learn the basics of Programming.</p>
 			</Module>
 
 			<Module>
@@ -117,8 +117,9 @@ function coding4cauvery(props) {
 				</h4>
 				<p>
 					For this module, you&apos;ll make a web app to share a skill, passion,
-					message, or whatever with the world. We&apos;ll be making a web app
-					for a fictional restaurant called Prana Pizza. 🍕
+					message, or whatever with the world. We&apos;ll be making a hatha yoga
+					studio web app based on a real yoga studio in the course, but you can
+					make whatever kind of website you want.
 				</p>
 			</Module>
 
@@ -139,7 +140,10 @@ function coding4cauvery(props) {
 					<b>Module 6 -</b> User Login AKA Authentication (Project) -{" "}
 					<i>Tentative Release Date October 22, 2021</i>
 				</h4>
-				<p>For this module, you&apos;ll learn how to login to your web app.</p>
+				<p>
+					For this module, you&apos;ll learn how to enable user login for your
+					web app.
+				</p>
 			</Module>
 
 			<Module>
@@ -149,7 +153,7 @@ function coding4cauvery(props) {
 				</h4>
 				<p>
 					For this module, you&apos;ll learn how to create an admin & user
-					backend for logged-in users of your web app.
+					backend for anyone who logs in successfully to your web app.
 				</p>
 			</Module>
 
