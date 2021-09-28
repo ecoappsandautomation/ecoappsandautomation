@@ -81,7 +81,7 @@ function coding4cauvery(props) {
 			<Module>
 				<h4>
 					<b>Module 1 -</b> Creating a Conducive Environment for Coding -{" "}
-					<i>Release Date September 17, 2021</i>
+					<i>Released</i>
 				</h4>
 				<p>
 					In this module, you&apos;ll learn how to set your environment up for
@@ -93,7 +93,7 @@ function coding4cauvery(props) {
 			<Module>
 				<h4>
 					<b>Module 2 -</b> How to Create Scope of Work / Software Requirements
-					Documentation - <i>Release Date September 24, 2021</i>
+					Documentation - <i>Release Date October 1, 2021</i>
 				</h4>
 				<p>
 					In this module, you&apos;ll learn how to map out your app idea and
@@ -105,7 +105,7 @@ function coding4cauvery(props) {
 			<Module>
 				<h4>
 					<b>Module 3 -</b> Introduction to Core Programming Skills -{" "}
-					<i>Tentative Release Date October 1, 2021</i>
+					<i>Tentative Release Date October 15, 2021</i>
 				</h4>
 				<p>In this module, you&apos;ll learn the basics of Programming.</p>
 			</Module>
@@ -113,7 +113,7 @@ function coding4cauvery(props) {
 			<Module>
 				<h4>
 					<b>Module 4 -</b> Start Your Web app (Project) -{" "}
-					<i>Tentative Release Date October 8, 2021</i>
+					<i>Tentative Release Date October 29, 2021</i>
 				</h4>
 				<p>
 					For this module, you&apos;ll make a web app to share a skill, passion,
@@ -126,7 +126,7 @@ function coding4cauvery(props) {
 			<Module>
 				<h4>
 					<b>Module 5 -</b> Backend Setup (Project) -{" "}
-					<i>Tentative Release Date October 15, 2021</i>
+					<i>Tentative Release Date November 12, 2021</i>
 				</h4>
 				<p>
 					For this module, you&apos;ll learn how to connect your web app to a
@@ -138,7 +138,7 @@ function coding4cauvery(props) {
 			<Module>
 				<h4>
 					<b>Module 6 -</b> User Login AKA Authentication (Project) -{" "}
-					<i>Tentative Release Date October 22, 2021</i>
+					<i>Tentative Release Date November 19, 2021</i>
 				</h4>
 				<p>
 					For this module, you&apos;ll learn how to enable user login for your
@@ -149,7 +149,7 @@ function coding4cauvery(props) {
 			<Module>
 				<h4>
 					<b>Module 7 -</b> User Backend by Role (Project) -{" "}
-					<i>Tentative Release Date October 29, 2021</i>
+					<i>Tentative Release Date November 26, 2021</i>
 				</h4>
 				<p>
 					For this module, you&apos;ll learn how to create an admin & user
@@ -160,7 +160,7 @@ function coding4cauvery(props) {
 			<Module>
 				<h4>
 					<b>Module 8 -</b> Payment Processing (Project) -{" "}
-					<i>Tentative Release Date November 5, 2021</i>
+					<i>Tentative Release Date December 10, 2021</i>
 				</h4>
 				<p>
 					For this module, you&apos;ll learn how to create a checkout process.
@@ -170,7 +170,7 @@ function coding4cauvery(props) {
 			<Module>
 				<h4>
 					<b>Module 9 -</b> Launch. (Project) -{" "}
-					<i>Tentative Release Date November 12, 2021</i>
+					<i>Tentative Release Date December 17, 2021</i>
 				</h4>
 				<p>
 					For this module, you&apos;ll learn how to launch (deploy) your web app
