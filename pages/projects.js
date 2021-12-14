@@ -10,7 +10,9 @@ function projects(props) {
 	const url = "https://yogasiddhi.ca";
 	const logoUrl =
 		"https://i.postimg.cc/v8SN6bWc/Yoga-siddhi-logo-modified-02.png";
-
+	const myLoader = ({ width, quality }) => {
+		return `${logoUrl}?w=${width}&q=${quality || 75}`;
+	};
 	return (
 		<Container variants={stagger} initial='initial' animate='animate'>
 			<h1>Projects</h1>
@@ -29,7 +31,13 @@ function projects(props) {
 					whileHover={hover}
 					whiteTap={tap}
 				>
-					<Image src={logoUrl} alt='Yoga siddhi logo' />
+					<Image
+						src={logoUrl}
+						alt='Yoga siddhi logo'
+						width={300}
+						height={100}
+						loader={myLoader}
+					/>
 					<StyledDivider />
 					<h2>Yoga Siddhi</h2>
 					<Link
