@@ -253,6 +253,7 @@ const TopContent = styled.div`
 `;
 const LogoImg = styled.img`
 	max-height: 64px;
+	max-width: 24vw;
 `;
 const MobileLogoImg = styled.img`
 	max-height: 56px;
