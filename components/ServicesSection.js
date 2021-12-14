@@ -62,7 +62,8 @@ const Container = styled.div`
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin: 16px 0px;
+		margin: 16px auto;
+		width: 80%;
 	}
 	> h1 {
 		margin-bottom: 32px;

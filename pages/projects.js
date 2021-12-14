@@ -73,6 +73,9 @@ const Container = styled(motion.div)`
 	margin: 0 auto;
 	> h1 {
 		margin-top: 32px;
+		@media (max-width: 1208px) {
+			margin-left: 32px;
+		}
 	}
 `;
 const ProjectCard = styled(motion.div)`
@@ -82,7 +85,9 @@ const ProjectCard = styled(motion.div)`
 	margin: 32px 16px;
 	padding: 24px;
 	cursor: pointer;
-
+	@media (max-width: 1208px) {
+		margin-left: 32px;
+	}
 	> img {
 		width: 100%;
 		margin-bottom: 8px;
@@ -93,7 +98,6 @@ const CTALink = styled.p`
 	margin-top: 32px;
 	transition: 0.333s ease;
 	color: var(--link-colour-1);
-
 	:hover {
 		color: var(--link-colour-2);
 	}

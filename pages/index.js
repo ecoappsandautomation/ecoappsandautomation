@@ -33,7 +33,8 @@ const Container = styled.div`
 	margin-left: auto;
 	margin-right: auto;
 	@media (max-width: 1208px) {
-		margin-top: 24px;
+		/* margin-top: 24px; */
+		width: 100vw;
 	}
 `;
 
@@ -41,6 +42,9 @@ const BannerImgContainer = styled.div.attrs((props) => ({
 	className: props.className,
 }))`
 	margin-top: 32px;
+	@media (max-width: 1208px) {
+		margin-top: 0px;
+	}
 	background-image: url(${({ bg }) => bg});
 	width: 100%;
 	height: 50vh;
@@ -63,6 +67,10 @@ const BannerImgContainer = styled.div.attrs((props) => ({
 	}
 	> div {
 		width: 80%;
+		@media (max-width: 1208px) {
+			width: 90%;
+			margin-top: 0px;
+		}
 		display: flex;
 		justify-content: flex-end;
 		flex-direction: column;
