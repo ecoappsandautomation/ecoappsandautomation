@@ -192,7 +192,7 @@ const Container = styled.div`
 	align-items: center;
 	border-bottom: 1px solid var(--light-colour-3);
 	position: sticky;
-	top: 2.1rem;
+	top: 3.33rem;
 	padding: 16px 24px;
 	transition: 0.333s ease;
 	background-color: var(--header-colour-1);
