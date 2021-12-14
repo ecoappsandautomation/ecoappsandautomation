@@ -65,7 +65,6 @@ const Container = styled.div`
 		width: 70vw;
 	}
 `;
-const Top = styled.div``;
 const Title = styled.h2`
 	text-align: center;
 	padding: 8px;

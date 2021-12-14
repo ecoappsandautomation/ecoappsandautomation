@@ -79,7 +79,7 @@ const ProjectCard = styled(motion.div)`
 	width: 300px;
 	background: white;
 	border-radius: 7px;
-	margin: 32px;
+	margin: 32px 16px;
 	padding: 24px;
 	cursor: pointer;
 
