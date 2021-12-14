@@ -29,9 +29,9 @@ export default function Home() {
 const Container = styled.div`
 	display: flex;
 	flex-direction: column;
-	width: 70vw;
 	margin-left: auto;
 	margin-right: auto;
+	padding-bottom: 64px;
 	@media (max-width: 1208px) {
 		/* margin-top: 24px; */
 		width: 100vw;
@@ -41,13 +41,12 @@ const Container = styled.div`
 const BannerImgContainer = styled.div.attrs((props) => ({
 	className: props.className,
 }))`
-	margin-top: 32px;
 	@media (max-width: 1208px) {
 		margin-top: 0px;
 	}
 	background-image: url(${({ bg }) => bg});
 	width: 100%;
-	height: 50vh;
+	height: 88vh;
 	background-size: cover;
 	background-position: bottom left -108px;
 	display: flex;
