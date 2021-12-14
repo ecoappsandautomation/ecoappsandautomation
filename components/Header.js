@@ -173,7 +173,7 @@ function Header(props) {
 						)}
 						{showNav ? (
 							<MobileLinks>
-								<MobileNav setShowNav={setShowNav} showNav={showNav} />
+								<MobileNav />
 							</MobileLinks>
 						) : null}
 					</>
@@ -188,11 +188,12 @@ const Container = styled.div`
 	justify-content: space-between;
 	@media (max-width: 768px) {
 		padding: 16px;
+		top: 3.33rem;
 	}
 	align-items: center;
 	border-bottom: 1px solid var(--light-colour-3);
 	position: sticky;
-	top: 3.33rem;
+	top: 2.1rem;
 	padding: 16px 24px;
 	transition: 0.333s ease;
 	background-color: var(--header-colour-1);
