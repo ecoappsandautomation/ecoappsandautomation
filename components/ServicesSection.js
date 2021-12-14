@@ -3,34 +3,49 @@ import styled from "styled-components";
 import { CgWebsite } from "react-icons/cg";
 import { BiSupport } from "react-icons/bi";
 import { RiPlantLine } from "react-icons/ri";
+import { FiRefreshCcw } from "react-icons/fi";
+import { AiFillFunnelPlot } from "react-icons/ai";
+import Link from "next/link";
 import { useRouter } from "next/router";
+import hrefSettings from "../utils/hrefSettings";
 function ServicesSection(props) {
 	const router = useRouter();
 	const visitUrl = (url) => {
 		router.push(url);
 	};
+	const url = "/services";
 	return (
 		<Container>
 			<h1>Check out our services</h1>
 			<BoxContainer>
-				<Box
-					onClick={() => {
-						visitUrl("/services");
-					}}
+				<Link href={hrefSettings("eco-apps-home", "site", "mgmt-box", url)}>
+					<Box>
+						<MgmtIcon /> Project Management
+					</Box>
+				</Link>
+				<Link
+					href={hrefSettings("eco-apps-home", "site", "wbdvlpmnt-box", url)}
 				>
-					<MgmtIcon /> Project Management
-				</Box>
-				<Box
-					onClick={() => {
-						visitUrl("/services");
-					}}
+					<Box>
+						<WebIcon /> Web Development
+					</Box>
+				</Link>
+				<Link
+					href={hrefSettings("eco-apps-home", "site", "fnloptmztn-box", url)}
 				>
-					<WebIcon /> Web Development
-				</Box>
-				{/* <Box>
-					<SupportIcon />
-					IT Support
-				</Box> */}
+					<Box>
+						<MaintenanceIcon />
+						Project Maintenance
+					</Box>
+				</Link>
+				<Link
+					href={hrefSettings("eco-apps-home", "site", "fnloptmztn-box", url)}
+				>
+					<Box>
+						<FunnelIcon />
+						Funnel Optimization
+					</Box>
+				</Link>
 			</BoxContainer>
 		</Container>
 	);
@@ -48,6 +63,9 @@ const Container = styled.div`
 		flex-direction: column;
 		align-items: center;
 		margin: 16px 0px;
+	}
+	> h1 {
+		margin-bottom: 32px;
 	}
 `;
 const BoxContainer = styled.div`
@@ -94,6 +112,15 @@ const SupportIcon = styled(BiSupport)`
 `;
 
 const MgmtIcon = styled(RiPlantLine)`
+	margin-top: 4px;
+	margin-right: 8px;
+`;
+
+const MaintenanceIcon = styled(FiRefreshCcw)`
+	margin-top: 4px;
+	margin-right: 8px;
+`;
+const FunnelIcon = styled(AiFillFunnelPlot)`
 	margin-top: 4px;
 	margin-right: 8px;
 `;
