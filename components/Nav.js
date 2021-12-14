@@ -85,7 +85,7 @@ const CallToAction = styled.p`
 `;
 
 const ActiveLink = styled.p`
-	color: var(--dark-colour-1) !important;
+	color: white !important;
 	:hover {
 		opacity: 100 !important;
 		cursor: default !important;
