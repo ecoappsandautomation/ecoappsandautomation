@@ -16,6 +16,7 @@ import PhoneIcon from "@material-ui/icons/Phone";
 import { selectBasket } from "../features/basketSlice";
 import { FaShoppingBag } from "react-icons/fa";
 import EmailIcon from "@material-ui/icons/Email";
+
 function Header(props) {
 	const [hideHeader, setHideHeader] = useState(false);
 	const [showNav, setShowNav] = useState(false);
@@ -41,6 +42,7 @@ function Header(props) {
 			setHideHeader(false);
 		}
 	}, []);
+
 	return (
 		<Media query='(min-width: 768px)'>
 			{(matches) => {
@@ -171,7 +173,7 @@ function Header(props) {
 						)}
 						{showNav ? (
 							<MobileLinks>
-								<MobileNav />
+								<MobileNav setShowNav={setShowNav} showNav={showNav} />
 							</MobileLinks>
 						) : null}
 					</>

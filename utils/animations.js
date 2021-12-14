@@ -30,7 +30,17 @@ const stagger = {
 		},
 	},
 };
-
+const fastStagger = {
+	initial: {
+		opacity: 0,
+	},
+	animate: {
+		opacity: 1,
+		transition: {
+			staggerChildren: 0.1,
+		},
+	},
+};
 const pageLoad = {
 	exit: { opacity: 0 },
 	animate: { opacity: 1 },
@@ -84,4 +94,5 @@ export {
 	tap,
 	fadeInDelay,
 	smallHover,
+	fastStagger,
 };

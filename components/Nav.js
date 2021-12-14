@@ -7,7 +7,7 @@ function Nav(props) {
 	const visitUrl = (url) => {
 		router.push(url);
 	};
-	const urls = getUrls();
+	const urls = getUrls("urls");
 	return (
 		<Container>
 			{urls.map(({ name, url }) => (

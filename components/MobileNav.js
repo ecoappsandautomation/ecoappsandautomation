@@ -2,36 +2,44 @@ import React from "react";
 import { useRouter } from "next/router";
 import styled from "styled-components";
 import getUrls from "../utils/getUrls";
-function MobileNav(props) {
+import { motion, AnimateSharedLayout } from "framer-motion";
+import { fadeIn, fastStagger } from "../utils/animations";
+function MobileNav({ setShowNav, showNav }) {
 	const router = useRouter();
 	const visitUrl = (url) => {
 		router.push(url);
+		setShowNav(!showNav);
 	};
-	const urls = getUrls();
+	const urls = getUrls("mobileUrls");
 
 	return (
-		<Container>
-			{urls.map(({ name, url }) => (
-				<>
-					{router.pathname === url ? (
-						<ActiveLink key={name}>{name}</ActiveLink>
-					) : (
-						<Link
-							onClick={() => {
-								visitUrl(url);
-							}}
-							key={name}
-						>
-							{name}
-						</Link>
-					)}
-				</>
-			))}
-		</Container>
+		<AnimateSharedLayout>
+			<Container variants={fastStagger} animate='animate' initial='initial'>
+				{urls.map(({ name, url }) => (
+					<>
+						{router.pathname === url ? (
+							<ActiveLink key={name} variants={fadeIn}>
+								{name}
+							</ActiveLink>
+						) : (
+							<Link
+								onClick={() => {
+									visitUrl(url);
+								}}
+								key={name}
+								variants={fadeIn}
+							>
+								{name}
+							</Link>
+						)}
+					</>
+				))}
+			</Container>
+		</AnimateSharedLayout>
 	);
 }
 export default MobileNav;
-const Container = styled.div`
+const Container = styled(motion.div)`
 	display: flex;
 	font-size: 21px;
 	margin-right: auto;
@@ -42,7 +50,7 @@ const Container = styled.div`
 	width: 100%;
 `;
 
-const Link = styled.p`
+const Link = styled(motion.p)`
 	cursor: pointer !important;
 	transition: 0.333s ease;
 	color: var(--main-link-color);
@@ -56,7 +64,7 @@ const Link = styled.p`
 	}
 `;
 const ActiveLink = styled(Link)`
-	color: var(--dark-color) !important;
+	color: var(--light-colour-2) !important;
 	:hover {
 		opacity: 100 !important;
 		cursor: default !important;

@@ -4,7 +4,8 @@ const urls = [
 	// { name: "Coding4Cauvery", url: `/coding4cauvery` },
 	{ name: "Projects", url: `/projects` },
 ];
-
-export default function getUrls() {
-	return urls;
+const mobileUrls = [...urls, { name: "Services - Hire Us", url: "/services" }];
+export default function getUrls(type) {
+	if (type === "urls") return urls;
+	if (type === "mobileUrls") return mobileUrls;
 }
