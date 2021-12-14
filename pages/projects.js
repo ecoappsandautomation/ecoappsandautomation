@@ -70,10 +70,9 @@ function projects(props) {
 export default projects;
 const Container = styled(motion.div)`
 	@media (min-width: 1208px) {
-		margin-left: 32px;
 		width: 1200px;
+		margin: 0 auto;
 	}
-	margin: 0 auto;
 	> h1 {
 		margin-top: 32px;
 		@media (max-width: 1208px) {
