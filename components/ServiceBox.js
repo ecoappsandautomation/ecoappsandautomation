@@ -9,7 +9,12 @@ function ServiceBox({ title, activityScope, price, billingFrequency, url }) {
 	const handleClick = (url) => {
 		router.push(url);
 	};
-
+	function commaSeparateNumber(val) {
+		while (/(\d+)(\d{3})/.test(val.toString())) {
+			val = val.toString().replace(/(\d+)(\d{3})/, "$1" + "," + "$2");
+		}
+		return val;
+	}
 	return (
 		<Container>
 			<Title>{title}</Title>
@@ -24,7 +29,7 @@ function ServiceBox({ title, activityScope, price, billingFrequency, url }) {
 			<PriceBox>
 				<PriceText>Starting at: </PriceText>
 				<Price>
-					<Amount>${price}</Amount>
+					<Amount>${commaSeparateNumber(price)}</Amount>
 					<BillingFrequency> per {billingFrequency}</BillingFrequency>
 				</Price>
 			</PriceBox>
@@ -81,6 +86,7 @@ const BulletPoint = styled.div`
 `;
 const Bullet = styled(ImCheckmark)`
 	margin-right: 8px;
+	width: 50px;
 	font-size: 21px;
 `;
 const CTAButton = styled(Button)`
