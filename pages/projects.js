@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import Link from "next/Link";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { fadeInLeft, stagger, hover, tap } from "../utils/animations";
 import hrefSettings from "../utils/hrefSettings";
 import { StyledDivider } from "../styles/styledComponents";
-import Image from "next/Image";
+import Image from "next/image";
 function projects(props) {
 	const url = "https://yogasiddhi.ca";
 	const logoUrl =
