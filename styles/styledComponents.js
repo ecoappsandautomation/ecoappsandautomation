@@ -3,14 +3,14 @@ import styled from "styled-components";
 import Popup from "reactjs-popup";
 
 const CTABtn = styled.button`
-	padding: 8px 16px;
+	padding: 8px 32px;
 	border: none;
 	border-radius: 4px;
-	background-color: var(--main-link-color);
+	background-color: var(--link-colour-1);
 	color: white;
 	font-weight: 700;
 	font-size: 18px;
-	width: 100%;
+	width: max-content;
 	transition: 0.333s ease;
 	cursor: pointer;
 	display: flex;
@@ -18,8 +18,8 @@ const CTABtn = styled.button`
 	justify-content: center;
 	margin-bottom: 8px;
 	:hover {
-		background-color: var(--dark-color);
-		color: var(--light-color);
+		background-color: var(--link-colour-2);
+		color: var(--link-colour-1);
 	}
 `;
 const CTABtnTwo = styled(CTABtn)`
