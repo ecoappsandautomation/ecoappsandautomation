@@ -3,15 +3,16 @@ export default function getServices(service) {
 		{
 			title: "Optimized Funnels",
 			activityScope: [
-				"Redesign of every page of your existing Funnels into NextJS websites",
+				"Redesign & convert every page of your existing Funnel into NextJS web apps",
 				"Convert pages from ClickFunnels, DropFunnels, LeadPages, or your preferred funnel builder.",
 				"Integrate with any marketing software that has an api",
-				"Speed up Page Load Times",
-				"Analytics Integration(s) like Google / Facebook",
-				"Optional: Rebounce Email Validation to protect your senders reputation",
+				"Speed up page load times",
+				"Analytics integration(s) like Google / Facebook",
+				"Optional: Rebounce validation to protect your email sender reputation",
 			],
 			price: 4999,
 			billingFrequency: "Project",
+			callType: "strategy",
 			url: "https://1lzc663dj0j.typeform.com/to/kZgfh0vi#type=Optimized%20Funnels",
 		},
 		{
@@ -27,13 +28,14 @@ export default function getServices(service) {
 				"Includes 12 months of IT Support",
 			],
 			price: 11888,
+			callType: "strategy",
 			billingFrequency: "Project",
 			url: "https://1lzc663dj0j.typeform.com/to/LKYTNsVm?type=Progressive%20Web%20App%20Development",
 		},
 		{
 			title: "Basic Website",
 			activityScope: [
-				"A to Z Project Management",
+				"3 months of Project Management",
 				"Target Result Alignment",
 				"Rapid Prototyping",
 				"Scalable Backend",
@@ -46,6 +48,7 @@ export default function getServices(service) {
 			],
 			price: 4999,
 			billingFrequency: "Project",
+			callType: "strategy",
 			url: "https://1lzc663dj0j.typeform.com/to/LKYTNsVm?type=Basic%20Website",
 		},
 		{
@@ -59,6 +62,7 @@ export default function getServices(service) {
 			],
 			price: 1499,
 			billingFrequency: "Project",
+			callType: "consultation",
 			url: "https://1lzc663dj0j.typeform.com/to/AmQ3HE5S?type=Project%20Management",
 		},
 		{
@@ -71,6 +75,7 @@ export default function getServices(service) {
 				"Third party web tool support",
 			],
 			price: 1499,
+			callType: "consultation",
 			billingFrequency: "Month",
 			url: "https://1lzc663dj0j.typeform.com/to/dAjo78l6#type=Project%20Management",
 		},
