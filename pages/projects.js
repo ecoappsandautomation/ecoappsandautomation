@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { fadeInLeft, stagger, hover, tap } from "../utils/animations";
 import hrefSettings from "../utils/hrefSettings";
 import { StyledDivider } from "../styles/styledComponents";
+import Image from "next/Image";
 function projects(props) {
 	const url = "https://yogasiddhi.ca";
 	const logoUrl =
@@ -28,7 +29,7 @@ function projects(props) {
 					whileHover={hover}
 					whiteTap={tap}
 				>
-					<img src={logoUrl} />
+					<Image src={logoUrl} alt='Yoga siddhi logo' />
 					<StyledDivider />
 					<h2>Yoga Siddhi</h2>
 					<Link
