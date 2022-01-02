@@ -26,7 +26,6 @@ export default function getServices(service) {
 				"Secure customer one time or subscription payments with Stripe, PayPal, or Crypto",
 				"Facebook & Google Analytics Integration",
 				"Third Party API Integration",
-				"Includes 12 months of IT Support",
 			],
 			price: 1000,
 			callType: "strategy",
