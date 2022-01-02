@@ -13,7 +13,10 @@ export default function Home() {
 		<Container>
 			<BannerImgContainer bg={imgUrl}>
 				<div>
-					<h1>Ready to build a fast scalable webapp?</h1>
+					<h1>
+						Ready to build a fast scalable webapp for $1000 + $1 per user /
+						month?
+					</h1>
 					<p>Book a strategy call today (takes 3 min)</p>
 					<Link href={appUrl}>
 						<CTABtn>Book strategy call</CTABtn>
