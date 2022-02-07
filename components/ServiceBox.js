@@ -56,13 +56,7 @@ function ServiceBox({
 						)}
 					</DisplayToggleContainer>
 				</List>
-				<PriceBox>
-					<PriceText>Starting at: </PriceText>
-					<Price>
-						<Amount>${commaSeparateNumber(price)}</Amount>
-						<BillingFrequency> per {billingFrequency}</BillingFrequency>
-					</Price>
-				</PriceBox>
+
 				<CTAButton
 					onClick={() => {
 						handleClick(url);
