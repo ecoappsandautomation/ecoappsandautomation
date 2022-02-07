@@ -8,14 +8,14 @@ export default function Home() {
 	const imgUrl = `https://i.postimg.cc/15TfQ5GZ/nail-gilfanov-Tuyneo-Fac-Jg-unsplash.jpg`;
 
 	const appUrl =
-		"https://1lzc663dj0j.typeform.com/to/LKYTNsVm?type=Scalable%20Web%20App%20Development";
+		"https://1lzc663dj0j.typeform.com/to/LKYTNsVm?type=Faster%20Web%20Site%20-%20Business%20Automation";
 	return (
 		<Container>
 			<BannerImgContainer bg={imgUrl}>
 				<div>
 					<h1>
-						Ready to build a fast scalable webapp for <br /> $1000 + $1 per user
-						/ month?
+						Need a faster website or business automation to save you time,
+						energy, and money?
 					</h1>
 					<p>Book a strategy call today (takes 3 min)</p>
 					<Link href={appUrl}>
