@@ -66,7 +66,7 @@ export default function getServices(service) {
 			url: "https://1lzc663dj0j.typeform.com/to/AmQ3HE5S?type=Project%20Management",
 		},
 		{
-			title: "Project Maintenance",
+			title: "Code Maintenance",
 			activityScope: [
 				"Optimize and maintain your existing code",
 				"Dedicated support line",
@@ -79,7 +79,44 @@ export default function getServices(service) {
 			billingFrequency: "Month",
 			url: "https://1lzc663dj0j.typeform.com/to/dAjo78l6#type=Project%20Management",
 		},
-
+		{
+			title: "Online Presence and Reputation Management",
+			activityScope: [
+				"Create & Maintain your online business listings",
+				"Rank your location higher in Google Business listings",
+				"Continuously gather new customer reviews & feedback",
+				"Branding",
+				"Graphic design",
+			],
+			price: 399,
+			callType: "consultation",
+			billingFrequency: "Month",
+			url: "https://1lzc663dj0j.typeform.com/to/dAjo78l6#type=Reputation%20Management",
+		},
+		{
+			title: "Search Engine Optimization (SEO)",
+			activityScope: [
+				"Rank your website higher in Google search listings",
+				"Increase organic traffic to your website",
+				"Add to your bottom line naturally",
+			],
+			price: 2499,
+			callType: "consultation",
+			billingFrequency: "Project",
+			url: "https://1lzc663dj0j.typeform.com/to/dAjo78l6#type=Search%20Engine%20Optimization",
+		},
+		{
+			title: "Pay Per Click Advertising (PPC)",
+			activityScope: [
+				"Attract new ideal clients predictably",
+				"Set your own advertising budget",
+				"Includes one free 60-second promo video a month",
+			],
+			price: 1999,
+			callType: "consultation",
+			billingFrequency: "Month",
+			url: "https://1lzc663dj0j.typeform.com/to/dAjo78l6#type=Pay%20Per%20Click",
+		},
 		// {
 		// 	title: "Premium IT Support",
 		// 	activityScope: [

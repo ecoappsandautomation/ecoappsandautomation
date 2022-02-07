@@ -14,9 +14,10 @@ export default function Home() {
 			<BannerImgContainer bg={imgUrl}>
 				<div>
 					<h1>
-						Need a faster website or business automation to save you time,
-						energy, and money?
+						Need a faster website or business automation to <br /> save you
+						time, energy, and money?
 					</h1>
+					<br />
 					<p>Book a strategy call today (takes 3 min)</p>
 					<Link href={appUrl}>
 						<CTABtn>Book strategy call</CTABtn>
