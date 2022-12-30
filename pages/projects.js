@@ -14,6 +14,7 @@ function projects(props) {
 					({ url, logoUrl, utmSource, utmMedium, prefetch, siteTitle }) => (
 						<>
 							<ProjectCard
+								key={siteTitle}
 								url={url}
 								logoUrl={logoUrl}
 								utmSource={utmSource}

@@ -10,7 +10,11 @@ function MenuNav({ section, setSection }) {
 				if (section === currentItemIndex) {
 					return <ActiveItem key={item}>{item}</ActiveItem>;
 				} else {
-					return <p onClick={() => setSection(currentItemIndex)}>{item}</p>;
+					return (
+						<p key={item} onClick={() => setSection(currentItemIndex)}>
+							{item}
+						</p>
+					);
 				}
 			})}
 		</Container>
