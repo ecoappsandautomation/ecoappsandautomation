@@ -90,17 +90,6 @@ function Header(props) {
 								)}
 
 								<Nav />
-
-								<HeaderRight>
-									<BasketContainer
-										onClick={() => {
-											visitUrl(`/checkout`);
-										}}
-									>
-										{/* <CartIcon />
-									<BasketItemCount>{basket?.length}</BasketItemCount> */}
-									</BasketContainer>
-								</HeaderRight>
 							</Container>
 						)}
 					</>
@@ -229,7 +218,7 @@ const TopBar = styled.div`
 	top: 0;
 	color: white;
 	width: 100%;
-	padding: 2px 0 4px;
+	padding: 8px 0;
 `;
 const TopContent = styled.div`
 	width: 70vw;
@@ -342,23 +331,6 @@ const BasketContainer = styled.div`
 	:hover {
 		color: var(--light-colour-2);
 	}
-`;
-const MobileBasketContainer = styled(BasketContainer)`
-	color: var(--dark-colour-1);
-	flex: 1;
-	justify-content: center;
-	:hover {
-		color: var(--link-colour-2);
-	}
-`;
-const BasketItemCount = styled.p`
-	margin-left: 4px;
-	font-weight: 500;
-	font-size: large;
-	margin-right: 16px;
-`;
-const CartIcon = styled(FaShoppingBag)`
-	font-size: x-large;
 `;
 
 const PhoneIcon = styled(FaPhoneAlt)`
