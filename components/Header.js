@@ -1,21 +1,16 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Nav from "./Nav";
-import LocationDropdown from "./LocationDropdown";
 import MobileNav from "./MobileNav";
 import { useRouter } from "next/router";
 import Media from "react-media";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { MdEmail } from "react-icons/md";
-import LocationOnIcon from "@material-ui/icons/LocationOn";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import { MdEmail, MdExpandMore, MdLocationOn } from "react-icons/md";
 import { selectCurrentLocation } from "../features/appSlice";
 import getLocation from "../utils/getLocation";
 import { useSelector } from "react-redux";
-import PhoneIcon from "@material-ui/icons/Phone";
 import { selectBasket } from "../features/basketSlice";
-import { FaShoppingBag } from "react-icons/fa";
-import EmailIcon from "@material-ui/icons/Email";
+import { FaShoppingBag, FaPhoneAlt } from "react-icons/fa";
 
 function Header(props) {
 	const [hideHeader, setHideHeader] = useState(false);
@@ -69,14 +64,9 @@ function Header(props) {
 								// 	handleToggle();
 								// }}
 								>
-									<LocationOnIcon />
+									<LocationIcon />
 									<span ref={anchorRef}>{location}</span>
 									{locationDetails?.length >= 2 ? <ExpandMoreIcon /> : null}
-									{/* <LocationDropdown
-										open={open}
-										setOpen={setOpen}
-										anchorRef={anchorRef}
-									/> */}
 								</Location>
 							</TopContent>
 						</TopBar>
@@ -137,7 +127,7 @@ function Header(props) {
 										handleToggle();
 									}}
 								>
-									<LocationOnIcon />
+									<LocationIcon />
 									<span ref={anchorRef}>{location}</span>
 								</Location> */}
 							</TopContent>
@@ -368,5 +358,21 @@ const BasketItemCount = styled.p`
 	margin-right: 16px;
 `;
 const CartIcon = styled(FaShoppingBag)`
+	font-size: x-large;
+`;
+
+const PhoneIcon = styled(FaPhoneAlt)`
+	font-size: x-large;
+`;
+
+const EmailIcon = styled(MdEmail)`
+	font-size: x-large;
+`;
+
+const ExpandMoreIcon = styled(MdExpandMore)`
+	font-size: x-large;
+`;
+
+const LocationIcon = styled(MdLocationOn)`
 	font-size: x-large;
 `;
