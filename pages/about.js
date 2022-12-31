@@ -1,4 +1,3 @@
-import VisibilityListener from "../components/VisibilityListener";
 import styled from "styled-components";
 function about(props) {
 	return (
