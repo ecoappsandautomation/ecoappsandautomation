@@ -29,7 +29,7 @@ function Header(props) {
 	};
 	useEffect(() => {
 		setLocationDetails(getLocation(location));
-	}, [location, getLocation]);
+	}, [location]);
 	useEffect(() => {
 		if (router.pathname === "/coding4cauvery") {
 			setHideHeader(true);
@@ -46,12 +46,12 @@ function Header(props) {
 						<TopBar>
 							<TopContent>
 								<Phone>
-									<PhoneNumber>
+									{/* <PhoneNumber>
 										<PhoneIcon />
 										<a href={`tel:${locationDetails?.phone}`}>
 											{locationDetails?.phone}
 										</a>
-									</PhoneNumber>
+									</PhoneNumber> */}
 									<Email>
 										<EmailIcon />
 										<a href={`mailto:support@ecoappsandautomation.com`}>
